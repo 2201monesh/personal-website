@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
+import Clock from "./Clock";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,16 +33,20 @@ function App() {
               </p>
             </p>
           </div>
-          <div className="footer mt-32 flex items-center">
-            <a href="https://x.com/GoyalMonesh">
-              <FaXTwitter
-                size={26}
-                className="text-white cursor-pointer mr-4"
-              />
-            </a>
-            <a href="https://github.com/2201monesh">
-              <IoLogoGithub size={28} className="text-white cursor-pointer" />
-            </a>
+          <div className="footer mt-32 flex items-center justify-between">
+            <div className="flex">
+              <a href="https://x.com/GoyalMonesh">
+                <FaXTwitter
+                  size={26}
+                  className="text-white cursor-pointer mr-4"
+                />
+              </a>
+              <a href="https://github.com/2201monesh">
+                <IoLogoGithub size={28} className="text-white cursor-pointer" />
+              </a>
+            </div>
+
+            <Clock />
           </div>
         </div>
       </div>
